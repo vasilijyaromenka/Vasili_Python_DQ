@@ -1,5 +1,5 @@
 
-# function to capitalize all the words in the match, but as there is only one in first_word_re, it fits
+# function to capitalize the 1st word in the match 
 def capitalize_word(match):
     start_spaces = match.group(1)
     word = match.group(2)
