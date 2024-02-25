@@ -9,7 +9,7 @@ list_of_dict = []
 ascii_lowercase = 'abcdefghijklmnopqrstuvwxyz'
 
 
-for num in range(2, rand.randint(3, 10)):   # setting the len of the list from 2 to 10
+for num in range(rand.randint(2, 10)):   # setting the len of the list from 2 to 10
     len_dct = rand.randint(1, 26)           # setting the len of the dict of the current from 1 to 26
     # for each k:v pair, choose a key randomly from ascii_lowercase and value from the range 0-100
     dct = {rand.choice(ascii_lowercase) : rand.randint(0, 100) for i in range(len_dct)}
@@ -61,6 +61,4 @@ for key in set(key_lst):
             common_dict = {k : v for k, v in common_dict.items() if key not in lst_of_max_keys}
 
 print(common_dict)
-
-
 
