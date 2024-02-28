@@ -89,11 +89,8 @@ print('\n' + '='*100 + '\n\n3) Creating a sentence from last words \n')
 
 last_words_lst = re.findall(last_word_re, txt_fix_2)
 last_words_sent = ' '.join(last_words_lst).capitalize() + '.'
-final_str = txt_fix_2 + "\n\t" + last_words_sent
+# and add to the end of this paragraf 
+final_str = txt_fix_2.replace( "end of this paragraph.", "end of this paragraph. " + last_words_sent)
 
 print(final_str)
-
-
-
-
 
