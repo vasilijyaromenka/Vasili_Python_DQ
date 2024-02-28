@@ -1,3 +1,5 @@
+import re
+
 
 # function to capitalize the 1st word in the match 
 def capitalize_word(match):
@@ -11,7 +13,6 @@ def capitalize_word(match):
 
 # func to capitalize 1st sentence words 
 def capitalize_1st_words(txt):
-    import re
     # declare a RE to capture 1st word of the sentence
     first_word_re = r'([:.!?]\s*)(\S+)'
     # capitalize every 1st word of the sentences and return edited string
@@ -26,7 +27,6 @@ def normalize_case(txt):
 
 # func to replace word -  only word, not a part of the string - with another one
 def replace_word(txt, old_word, new_word, ignorecase = True):
-    import re
     # a RE to capture old_word when it is a separate word and is not quoted
     if ignorecase:
         word_re = re.compile(fr'(?<!“)\b{old_word}\b(?!”)', re.IGNORECASE)
@@ -37,7 +37,6 @@ def replace_word(txt, old_word, new_word, ignorecase = True):
 
 # func to count all whitesapces in the string
 def white_space_count(txt):
-    import re
     # a RE to captures each single white space
     whitespace_re = r'\s'
     # count and return white spaced
@@ -45,7 +44,6 @@ def white_space_count(txt):
 
 # func to create list from last words in the sentences of the string
 def last_words_to_list(txt):
-    import re
     # a RE to capture the last word of a sentence
     last_word_re = r'\b\w+\b(?=[.!?])'
     return re.findall(last_word_re, txt)
@@ -60,8 +58,6 @@ def last_words_to_sentence(txt, punct_mark = '.'):
 
 # func to insert string after specifid substring
 def strig_after_substring(txt, substring, str_to_insert, left_separator = ' ', ignorecase = True):
-    import re
-
     if ignorecase:
         substring_re = re.compile(fr'{substring}', re.IGNORECASE)
     else:
@@ -69,17 +65,6 @@ def strig_after_substring(txt, substring, str_to_insert, left_separator = ' ', i
 
     return re.sub(substring_re, fr'\g<0>{left_separator}{str_to_insert}', txt)
 
-
-
-
-
-    # if not ignorecase:
-    #     if substring in txt:
-    #         new_txt = txt.replace(substring, substring + left_separator + str_to_insert)
-    #     else:
-    #         new_txt = txt + left_separator + str_to_insert
-    
-    return new_txt
 
 
 txt = """homEwork:

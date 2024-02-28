@@ -5,7 +5,6 @@ import random as rand
 
 # func to create a dict wit a random lenth with, random keys (from letters) and rendom int-values
 def random_dict(max_len = 10, max_val = 10, upper_key = False):
-    import random as rand
 
     ascii = 'abcdefghijklmnopqrstuvwxyz'
     if upper_key:
