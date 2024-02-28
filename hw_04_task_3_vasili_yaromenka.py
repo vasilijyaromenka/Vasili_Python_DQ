@@ -19,16 +19,19 @@ def capitalize_1st_words(txt):
 
 # func to normalize text case
 def normalize_case(txt):
-    txt = txt.lower()
-    txt = txt.capitalize()
-    txt = capitalize_1st_words(txt)
-    return txt
+    new_txt = txt.lower()
+    new_txt = new_txt.capitalize()
+    new_txt = capitalize_1st_words(new_txt)
+    return new_txt
 
-# func to replace word -  only word, not a part of string - with another one
-def replace_word(txt, old_word, new_word):
+# func to replace word -  only word, not a part of the string - with another one
+def replace_word(txt, old_word, new_word, ignorecase = True):
     import re
     # a RE to capture old_word when it is a separate word and is not quoted
-    word_re = fr"(?<!“)\b{old_word}\b(?!”)"
+    if ignorecase:
+        word_re = re.compile(fr'(?<!“)\b{old_word}\b(?!”)', re.IGNORECASE)
+    else:
+        word_re = re.compile(fr'(?<!“)\b{old_word}\b(?!”)')
     # replace all old_word with new_words and return edited string
     return re.sub(word_re, new_word, txt)
 
@@ -50,10 +53,33 @@ def last_words_to_list(txt):
 # func to create a sentence from last words in the  sentences of the string
 def last_words_to_sentence(txt, punct_mark = '.'):
     last_words_to_lst = last_words_to_list(txt)
-    string = " ".join(last_words_to_lst)
+    string = " ".join(last_words_to_lst) 
     sentence = string.capitalize() + punct_mark.strip()
     return sentence
 
+
+# func to insert string after specifid substring
+def strig_after_substring(txt, substring, str_to_insert, left_separator = ' ', ignorecase = True):
+    import re
+
+    if ignorecase:
+        substring_re = re.compile(fr'{substring}', re.IGNORECASE)
+    else:
+        substring_re = re.compile(fr'{substring}')
+
+    return re.sub(substring_re, fr'\g<0>{left_separator}{str_to_insert}', txt)
+
+
+
+
+
+    # if not ignorecase:
+    #     if substring in txt:
+    #         new_txt = txt.replace(substring, substring + left_separator + str_to_insert)
+    #     else:
+    #         new_txt = txt + left_separator + str_to_insert
+    
+    return new_txt
 
 
 txt = """homEwork:
@@ -74,12 +100,12 @@ result_text = normalize_case(txt)
 result_text = replace_word(result_text, 'iz', 'is')
 
 # add one more sentence from last words of text sentences
-result_text = f"{result_text}\n\t{last_words_to_sentence(result_text, ' !')}"
+result_text = strig_after_substring(result_text, 'end OF thIs ParAgrAph.', last_words_to_sentence(result_text) )
 
+# calculate number of whitespace characters in this text
+ws_count = white_space_count(txt)
 
 print(f"Normalized text with the added sentence: \n\n{result_text}")
-
-ws_count = white_space_count(txt)
 
 print(f"\n\nThere are {ws_count} white spaces in the initial text.")
 
