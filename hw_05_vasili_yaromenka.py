@@ -7,7 +7,7 @@ class Publcation:
     def __init__(self):
         self.pub_name = self.__class__.__name__
         self.length = 70 # max line length
-        self.file_path = r"C:\Users\Vasili_Yaromenka\Documents\my_learning\Python_for_DQ\Vasili_Yaromenka_PyDQ\feed.txt"
+        self.file_path = r"C:\Users\Vasili_Yaromenka\***\feed.txt"
         self.post_txt = None # to reassign with the user input
 
     def input_text(self):
