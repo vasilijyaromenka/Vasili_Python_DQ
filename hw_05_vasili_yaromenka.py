@@ -17,8 +17,7 @@ class Publcation:
     def pub_body(self):
         is_valid_input = False
         while not is_valid_input:
-            print("Enter your publication text. Minimum 6 characters:")
-            pub_body = self.user_input()
+            pub_body = self.user_input("Enter your publication text. Minimum 6 characters: \n")
             if len(pub_body) >= 6:
                 is_valid_input = True
             else:
@@ -49,9 +48,9 @@ class Publcation:
 
         result = f"{header}\n{pub_txt}\n\n{pub_end}"
         return result
-    
-    
-    def write_to_file(self):
+
+
+    def publish(self):
         post = self.pub_generator()
         try:
             with open(self.file_path, 'a') as file:
@@ -63,11 +62,6 @@ class Publcation:
 
         print(f"Your post has been published: \n{post}")    
         print(self.length * '-')
-
-
-    #@abstractmethod
-    def publish(self):
-        self.write_to_file()
         
         
         
@@ -81,7 +75,7 @@ class News(Publcation):
     def city(self):
         is_valid_input = False
         while not is_valid_input:
-            city = self.user_input("Enter the city. Minimum 3 characters:")
+            city = self.user_input("Enter the city. Minimum 3 characters:\n")
             if len(city) >= 3:
                 is_valid_input = True
             else:
@@ -109,7 +103,7 @@ class PrivateAd(Publcation):
     def check_exp_date(self):
         is_valid_input = False
         while not is_valid_input:
-            exp_date_str = self.user_input("Enter expirational date(YYYY-MM-DD):")
+            exp_date_str = self.user_input("Enter expirational date(YYYY-MM-DD):\n")
             try:
                 exp_date = datetime.strptime(exp_date_str, '%Y-%m-%d').date()
                 is_valid_input = True
