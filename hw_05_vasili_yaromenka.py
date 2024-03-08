@@ -108,23 +108,26 @@ class PrivateAd(Publcation):
                 exp_date = datetime.strptime(exp_date_str, '%Y-%m-%d').date()
                 is_valid_input = True
             except ValueError:
-                raise ValueError("Invalid date format. Please use 'YYYY-MM-DD'.")            
+                print("Invalid date format. Please use 'YYYY-MM-DD'.")            
         self.exp_date = exp_date
     
 
     def days_left_calc(self):
-        self.check_exp_date()
-
-        days_left = (self.exp_date - date.today()).days
-        if days_left < 0:
-            raise Exception("End date cannot be in the past")
+        is_future_date = False
+        while not is_future_date:
+            self.check_exp_date()
+            days_left = (self.exp_date - date.today()).days
+            if days_left >= 0:
+                is_future_date = True
+            else:
+                print("End date cannot be in the past")
         
         self.days_left = days_left
                 
 
     def pub_end(self):
         self.days_left_calc()
-        if self.exp_date == datetime.now():
+        if self.days_left == 0:
             pub_end = f"Actual until: {self.exp_date}, expires today."
         else:
             pub_end = f"Actual until: {self.exp_date}, {self.days_left} days left."
@@ -161,10 +164,12 @@ news = News()
 private_add = PrivateAd()
 event_announcement = SportNews()
 
-is_valid_input = False
 
-while not is_valid_input:
+while True:
+    is_valid_input = False
+
     pub_type = input("Choose your publication type - \n1-News, 2 - Private Ad, 3 - Event Announcement\nEnter 1-3:")
+
     if pub_type == '1':
         p = news
         is_valid_input = True
@@ -177,6 +182,5 @@ while not is_valid_input:
     else:   
         print("Enter a valid input")
 
-
-p.publish()
-
+    if is_valid_input:
+        p.publish()
