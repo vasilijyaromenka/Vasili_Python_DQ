@@ -1,36 +1,57 @@
+
 ----------------------------------------------------------------------
                                  News
 ----------------------------------------------------------------------
 
   
-Hundreds of millions of farmed salmon have perished in mass die-offs
-over the past decade, say researchers.the scientists say that large-
-scale mortalities are now happening more frequently and at a larger
-scale than ever before.they argue that warmer seas and greater
-reliance on technology are contributing to the rise in deaths.this
-global assessment looked at salmon deaths in some leading producers,
-including norway, the uk and canada.
+Munual news 1
 
-Vilnius, 2024-03-08  16:55.
+Vilnius, 2024-05-05.
 ----------------------------------------------------------------------
                               Private Ad
 ----------------------------------------------------------------------
 
   
-Shoes for sale, never worn
+Manual add
 
-Actual until: 2024-03-08, expires today.
+Actual until: 2025-03-03, 350 days left.
 ----------------------------------------------------------------------
                               Sport News
 ----------------------------------------------------------------------
 
   
-Andy murray believes players need to be more careful about how they
-speak to officials and that tennis could learn a lot from rugby about
-the issue.murray's second-round opponent at indian wells on friday is
-andrey rublev, who was disqualified in dubai last week for
-unsportsmanlike conduct.the world number five screamed in the face of
-a line judge following a disputed call in the final set of his semi-
-final with alexander bublik.
+Manual sport news
 
-Tennis news, Dubai , 2024-03-08  16:59.
+Ice Hockey news, New York, 2023-05-05.
+----------------------------------------------------------------------
+                                 News
+----------------------------------------------------------------------
+
+  
+The body of the valid news 1
+
+Vilnius, 2024-03-18  12:40.
+----------------------------------------------------------------------
+                                 News
+----------------------------------------------------------------------
+
+  
+The body of the valid news 2
+
+New Yourk, 2024-03-17.
+----------------------------------------------------------------------
+                              Private Ad
+----------------------------------------------------------------------
+
+  
+The body of the valid private ad 1
+
+Actual until: 2024-05-01, 44 days left.
+----------------------------------------------------------------------
+                              Sport News
+----------------------------------------------------------------------
+
+  
+The body of the valid sport news
+
+Tennis news, Las Vegas, 2024-03-18  12:40.

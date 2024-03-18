@@ -90,8 +90,9 @@ result_text = strig_after_substring(result_text, 'end OF thIs ParAgrAph.', last_
 # calculate number of whitespace characters in this text
 ws_count = white_space_count(txt)
 
-print(f"Normalized text with the added sentence: \n\n{result_text}")
+if __name__ == '__main__':
+    print(f"Normalized text with the added sentence: \n\n{result_text}")
 
-print(f"\n\nThere are {ws_count} white spaces in the initial text.")
+    print(f"\n\nThere are {ws_count} white spaces in the initial text.")
 
 

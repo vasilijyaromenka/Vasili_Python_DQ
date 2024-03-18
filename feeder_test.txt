@@ -1,0 +1,136 @@
+-- valid news 1 --
+$pub_s$
+
+$city_s$
+vilnius  
+$city_e$
+
+$date_s$
+
+$date_e$
+
+$news_s$
+the bOdy OF ThE valid news 1
+$news_e$
+
+$pub_e$
+
+
+-- valid news 2 --
+$pub_s$
+$city_s$
+new yourk
+$city_e$
+
+$date_s$
+2024-03-17
+$date_e$
+
+$news_s$
+the bOdy OF ThE valid news 2
+$news_e$
+
+$pub_e$
+
+-- invalid news 2 --
+$pub_s$
+$city_s$
+nx
+$city_e$
+
+$date_s$
+2024-03-17
+$date_e$
+
+$news_s$
+the bOdy OF ThE invalid news 2 - wrong city
+$news_e$
+$pub_e$
+
+************************************************
+-- valid ad  --
+$pub_s$
+
+
+$date_s$
+2024-05-01
+$date_e$
+
+$pr_ad_s$
+the bOdy OF ThE valid private ad 1
+$pr_ad_e$
+
+$pub_e$
+
+-- invalid ad  --
+$pub_s$
+
+$date_s$
+2022-05-01
+$date_e$
+
+$pr_ad_s$
+the bOdy OF ThE invalid private ad  - date in past
+$pr_ad_e$
+$pub_e$
+
+********************************************
+
+-- valid sport news --
+$pub_s$
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$sp_type_s$
+tennis
+$sp_type_e$
+
+$sp_news_s$
+the bOdy OF ThE valid sport news 
+$sp_news_e$
+$pub_e$
+
+
+-- invalid sport news --
+$pub_s$
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$sp_type_s$
+IH
+$sp_type_e$
+
+$sp_news_s$
+the bOdy OF ThE invalid sport news - short sport type
+$sp_news_e$
+$pub_e$
+
+*****************************************
+-- ivolid publication type --
+$pub_s$
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$sp_type_s$
+tennis
+$sp_type_e$
+
+$hz_s$
+the bOdy OF ThE valid sport news 
+$nz_e$
+$pub_e$
