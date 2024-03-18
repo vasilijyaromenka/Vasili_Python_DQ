@@ -317,6 +317,8 @@ class PublishFromFiles:
             # get full file path
             filepath = os.path.join(self.folder_path, filename)
             
+            text = None
+
             # check the path and read the entire text from file
             if os.path.isfile(filepath):
                 try:
@@ -324,30 +326,35 @@ class PublishFromFiles:
                         text = file.read()
                 except Exception as e:
                     print(f"An unexpected error occurred: {e}")
+            
+            if not text:
+                print('No valid files found')
+                return None
+            else:
 
-            publication_lst = self.return_text_blocks('pub', text)
+                publication_lst = self.return_text_blocks('pub', text)
 
-            for publication in publication_lst.copy():
-                if '$news_s$' in publication and '$news_e$' in publication:
-                    self.news_lst.append(publication)
-                    index = publication_lst.index(publication)
-                    publication_lst.pop(index)
+                for publication in publication_lst.copy():
+                    if '$news_s$' in publication and '$news_e$' in publication:
+                        self.news_lst.append(publication)
+                        index = publication_lst.index(publication)
+                        publication_lst.pop(index)
 
-                elif '$pr_ad_s$' in publication and '$pr_ad_e$' in publication:
-                    self.privet_ad_lst.append(publication)
-                    index = publication_lst.index(publication)
-                    publication_lst.pop(index)
-                
-                elif '$sp_news_s$' in publication and '$sp_news_e$' in publication:
-                    self.sport_news_lst.append(publication)
-                    index = publication_lst.index(publication)
-                    publication_lst.pop(index)
+                    elif '$pr_ad_s$' in publication and '$pr_ad_e$' in publication:
+                        self.privet_ad_lst.append(publication)
+                        index = publication_lst.index(publication)
+                        publication_lst.pop(index)
+                    
+                    elif '$sp_news_s$' in publication and '$sp_news_e$' in publication:
+                        self.sport_news_lst.append(publication)
+                        index = publication_lst.index(publication)
+                        publication_lst.pop(index)
 
-            for i in range(len(publication_lst)):
-                involid_publication = publication_lst.pop()
-                self.write_involid_publications(involid_publication, 'involide publication type')
+                for i in range(len(publication_lst)):
+                    involid_publication = publication_lst.pop()
+                    self.write_involid_publications(involid_publication, 'involide publication type')
 
-            os.remove(filepath)
+                os.remove(filepath)
 
     def publish_news(self):
         for i in range(len(self.news_lst)):
@@ -418,8 +425,8 @@ news = News()
 private_add = PrivateAd()
 event_announcement = SportNews()
 
-path = r"C:\Users\Vasili_Yaromenka\Documents\my_learning\Python_for_DQ\Vasili_Yaromenka_PyDQ\feeder_files"    
-pff = PublishFromFiles(path)
+path = os.path.abspath(os.path.dirname(__file__))  
+pff = PublishFromFiles(os.path.join(path, "feeder_files"))
 
 
 input_comment = """Choose your publication type 
@@ -446,9 +453,13 @@ while True:
         is_valid_input = True
     elif pub_type == '4':
         p = pff
-        pff.publish_all()
+        is_valid_input = True
     else:   
         print("Enter a valid input")
 
+     
     if is_valid_input:
-        p.publish_from_input()
+        if pub_type == '4':
+            pff.publish_all()
+        else:
+            p.publish_from_input()

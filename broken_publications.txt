@@ -82,3 +82,45 @@ NewsData(pub_body='The body of the invalid news 2 - wrong city', city='nx', news
 PrivateAddData(pub_body='the bOdy OF ThE invalid private ad  - date in past', exp_date='2022-05-01')
 ****************************** 2024-03-18  12:40; INVOLID DATA FOR SPORT NEWS: 
 SportNewsData(pub_body='The body of the invalid sport news - short sport type', city='las vegas', news_date='', sport_type='IH')
+****************************** 2024-03-18  18:02; INVOLIDE PUBLICATION TYPE: 
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$sp_type_s$
+tennis
+$sp_type_e$
+
+$hz_s$
+the bOdy OF ThE valid sport news 
+$nz_e$
+****************************** 2024-03-18  18:02; INVOLID DATA FOR NEWS: 
+NewsData(pub_body='The body of the invalid news 2 - wrong city', city='nx', news_date='2024-03-17')
+****************************** 2024-03-18  18:02; INVOLID DATA FOR PRIVATE AD: 
+PrivateAddData(pub_body='the bOdy OF ThE invalid private ad  - date in past', exp_date='2022-05-01')
+****************************** 2024-03-18  18:02; INVOLID DATA FOR SPORT NEWS: 
+SportNewsData(pub_body='The body of the invalid sport news - short sport type', city='las vegas', news_date='', sport_type='IH')
+****************************** 2024-03-18  18:11; INVOLIDE PUBLICATION TYPE: 
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$sp_type_s$
+tennis
+$sp_type_e$
+
+$hz_s$
+the bOdy OF ThE valid sport news 
+$nz_e$
+****************************** 2024-03-18  18:11; INVOLID DATA FOR NEWS: 
+NewsData(pub_body='The body of the invalid news 2 - wrong city', city='nx', news_date='2024-03-17')
+****************************** 2024-03-18  18:11; INVOLID DATA FOR PRIVATE AD: 
+PrivateAddData(pub_body='the bOdy OF ThE invalid private ad  - date in past', exp_date='2022-05-01')
+****************************** 2024-03-18  18:11; INVOLID DATA FOR SPORT NEWS: 
+SportNewsData(pub_body='The body of the invalid sport news - short sport type', city='las vegas', news_date='', sport_type='IH')
