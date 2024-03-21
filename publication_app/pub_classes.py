@@ -1,16 +1,9 @@
 import textwrap
-from datetime import datetime, date
+from datetime import datetime
 import re
 from abc import ABC, abstractmethod
-import re
-import os 
-import sys
 from pub_data_classes import *
-
-
-
-# sys.path.append("/path/to/your/module/hw_04_task_3_vasili_yaromenka")
-from hw_04_task_3_vasili_yaromenka import normalize_case
+from pub_normalize import normalize_case
 
 class Publcation:
     def __init__(self):
@@ -127,8 +120,7 @@ class News(Publcation):
         in_body = self.set_pub_body()
         news = NewsData(pub_city=in_city, pub_date=in_date, pub_body=in_body)
         
-        post = self.publish_data(news)
-        self.write_to_file(post)      
+        post = self.publish_data(news)    
         print(f"Your post has been published: \n{post}")    
         print(self.length * '-') 
 
@@ -170,8 +162,7 @@ class PrivateAd(Publcation):
         in_body = self.set_pub_body()
         private_add = PrivateAddData(exp_date=in_exp_date, pub_body=in_body)
         
-        post = self.publish_data(private_add)
-        self.write_to_file(post)      
+        post = self.publish_data(private_add)    
         print(f"Your post has been published: \n{post}")    
         print(self.length * '-') 
     
@@ -208,8 +199,7 @@ class SportNews(News):
         in_body = self.set_pub_body()
         sport_news = SportNewsData(sport_type=in_sport, pub_city=in_city, pub_date=in_date, pub_body=in_body)
         
-        post = self.publish_data(sport_news)
-        self.write_to_file(post)      
+        post = self.publish_data(sport_news) 
         print(f"Your post has been published: \n{post}")    
         print(self.length * '-') 
 

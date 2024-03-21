@@ -1,9 +1,9 @@
+import os
 import re
-from dataclasses import dataclass, field
-#from datetime import datetime
 from typing import Dict, Any
 from pub_data_classes import *
 from pub_classes import *
+
 
 
 txt = """
@@ -78,7 +78,7 @@ def fider_path(folder = '', directory = ''):
 
 
 def txt_parser(fider_path):
-    text = ' $pub_s$ No txt-files found $pub_e$'
+    text = ''
     
     for filename in os.listdir(fider_path):
         # get full file path
@@ -90,14 +90,19 @@ def txt_parser(fider_path):
                 with open(filepath, "r") as file:
                     file_content = file.read()
                     if file_content:
-                        text = file_content
+                        text += file_content
                 os.remove(filepath)
             except Exception as e:
                 text = f" $pub_s$ An unexpected error with {filename} occurred: {e} $pub_e$"
 
+    if not text:
+        text = ' $pub_s$ No txt-files found $pub_e$'
+
     return text 
 
-def write_involid_publications(unparsed_text, file_name = 'unparsed_publications.txt' ):
+
+
+def write_involid_publications(unparsed_text, file_name = 'file_unparsed_pubs.txt' ):
     text = f"{'-'*70} \n{unparsed_text}\n"
     try:
         with open(file_name, 'a') as file:
@@ -138,4 +143,3 @@ def publish_all(folder = '', directory = ''):
         a.publish_data(rec)
 
 
-publish_all()

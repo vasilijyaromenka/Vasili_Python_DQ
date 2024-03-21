@@ -1,12 +1,8 @@
-import textwrap
-from datetime import datetime, date
-import re
-from abc import ABC, abstractmethod
-import re
-import os 
-import sys
+import os
 from pub_data_classes import *
 from pub_classes import *
+from pub_functions import *
+from pub_csv_module import *
 
 
 
@@ -14,8 +10,6 @@ news = News()
 private_add = PrivateAd()
 event_announcement = SportNews()
 
-path = os.path.abspath(os.path.dirname(__file__))  
-pff = PublishFromFiles(os.path.join(path, "feeder_files"))
 
 
 input_comment = """Choose your publication type 
@@ -41,14 +35,15 @@ while True:
         p = event_announcement
         is_valid_input = True
     elif pub_type == '4':
-        p = pff
+        publish_all()
         is_valid_input = True
     else:   
         print("Enter a valid input")
 
      
     if is_valid_input:
-        if pub_type == '4':
-            pff.publish_all()
-        else:
+        if pub_type in {'1', '2', '3'}:
             p.publish_from_input()
+
+    words_counts('feed')
+    letters_counts('feed')
