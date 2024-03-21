@@ -91,8 +91,9 @@ tennis
 $sp_type_e$
 
 $sp_news_s$
-the bOdy OF ThE valid sport news 
+the bOdy OF ThE valid sport news 1
 $sp_news_e$
+
 $pub_e$
 
 
@@ -104,6 +105,7 @@ las vegas
 $city_e$
 
 $date_s$
+today
 $date_e$
 
 $sp_type_s$
@@ -111,7 +113,7 @@ IH
 $sp_type_e$
 
 $sp_news_s$
-the bOdy OF ThE invalid sport news - short sport type
+the
 $sp_news_e$
 $pub_e$
 
@@ -126,11 +128,9 @@ $city_e$
 $date_s$
 $date_e$
 
-$sp_type_s$
-tennis
-$sp_type_e$
-
 $hz_s$
-the bOdy OF ThE valid sport news 
+smthtjh
 $nz_e$
+
+
 $pub_e$
