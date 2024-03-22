@@ -1,8 +1,7 @@
-import os
-from pub_data_classes import *
-from pub_classes import *
-from pub_functions import *
-from pub_csv_module import *
+from pub_classes import News, PrivateAd, SportNews
+from pub_functions import publish_all
+from pub_csv_module import letters_counts, words_counts
+
 
 
 
@@ -37,6 +36,7 @@ while True:
     elif pub_type == '4':
         publish_all()
         is_valid_input = True
+        print("The feeder folder has been proccessed\n")
     else:   
         print("Enter a valid input")
 

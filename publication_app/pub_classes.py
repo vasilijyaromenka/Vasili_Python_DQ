@@ -1,9 +1,9 @@
 import textwrap
 from datetime import datetime
-import re
-from abc import ABC, abstractmethod
-from pub_data_classes import *
+from abc import abstractmethod
+from pub_data_classes import NewsData, PrivateAddData, SportNewsData
 from pub_normalize import normalize_case
+import re
 
 class Publcation:
     def __init__(self):
@@ -35,7 +35,7 @@ class Publcation:
     def pub_generator(self):
         llen = self.length 
         pub_end = self.pub_end()
-        pub_body = self.pub.pub_body
+        pub_body = normalize_case(self.pub.pub_body)
 
         # split class name into space separated words
         head_words = re.findall(r'[A-Z][a-z]*', self.pub_name)
@@ -55,7 +55,7 @@ class Publcation:
     def write_to_file(self, post):
         post = self.pub_generator()
         try:
-            with open(self.file_path, 'a') as file:
+            with open(self.file_path, 'a', encoding="utf-8") as file:
                 file.write(post)
         except IOError as e:
             print(f"An error occurred while writing to the file: {e}")
@@ -83,12 +83,12 @@ class News(Publcation):
         super().__init__()
 
     def set_news_date(self):
-        news_date_str = input("Enter news date (YYYY-MM-DD) or leave empty for current date:\n")  
-        if news_date_str == "":
-            is_valid_input = True
-        else:
-            is_valid_input = False
-            while not is_valid_input:                
+        is_valid_input = False
+        while not is_valid_input:    
+            news_date_str = input("Enter news date (YYYY-MM-DD) or leave empty for current date:\n")      
+            if news_date_str == "":
+                is_valid_input = True
+            else: 
                 try:
                     news_date = datetime.strptime(news_date_str, '%Y-%m-%d').date()
                     is_valid_input = True
@@ -136,6 +136,7 @@ class PrivateAd(Publcation):
             exp_date_str = input("Enter expirational date(YYYY-MM-DD):\n")
             try:
                 exp_date = datetime.strptime(exp_date_str, '%Y-%m-%d').date()
+                is_valid_input = True
             except ValueError:
                 print("Invalid date format. Please use 'YYYY-MM-DD'.")
             else:

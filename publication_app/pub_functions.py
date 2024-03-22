@@ -1,8 +1,9 @@
 import os
 import re
 from typing import Dict, Any
-from pub_data_classes import *
-from pub_classes import *
+from datetime import datetime
+from pub_data_classes import NewsData, SportNewsData, PrivateAddData
+from pub_classes import News, PrivateAd, SportNews
 
 
 
@@ -87,7 +88,7 @@ def txt_parser(fider_path):
         # check the path and read the entire text from file
         if os.path.isfile(filepath) and filepath.endswith('.txt'):
             try:
-                with open(filepath, "r") as file:
+                with open(filepath, "r", encoding="utf-8") as file:
                     file_content = file.read()
                     if file_content:
                         text += file_content
@@ -105,7 +106,7 @@ def txt_parser(fider_path):
 def write_involid_publications(unparsed_text, file_name = 'file_unparsed_pubs.txt' ):
     text = f"{'-'*70} \n{unparsed_text}\n"
     try:
-        with open(file_name, 'a') as file:
+        with open(file_name, 'a', encoding="utf-8") as file:
             file.write(text)
     except Exception as e:
         raise OSError(f"An unexpected error occurred: {e}")
