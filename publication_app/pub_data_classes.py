@@ -14,6 +14,7 @@ class PubblicationData:
 
         if not self.pub_date.strip():
             self.pub_date = datetime.now().strftime('%Y-%m-%d %H:%M')
+        
 
         try:
             datetime.strptime(self.pub_date, '%Y-%m-%d %H:%M')
@@ -30,7 +31,7 @@ class PubblicationData:
 
 @dataclass
 class NewsData(PubblicationData):
-    pub_city: str = field(default = None)
+    pub_city: str = field(default = '')
     pub_type: str = field(default = 'news')
     
 
@@ -65,14 +66,14 @@ class PrivateAddData(PubblicationData):
 
 @dataclass
 class SportNewsData(NewsData):
-    sport_type: str = field(default = None)
+    sport_type: str = field(default = '')
     pub_type: str = field(default='sport_news')
 
     
     def __post_init__(self):
         super().__post_init__()
 
-        if len(self.sport_type) < 3:
+        if len(self.sport_type) < 3 or not self.sport_type:
             self.status = False
             self.decision += "/ To short sport_type /"        
 

@@ -39,20 +39,7 @@ $news_e$
 
 $pub_e$
 
--- invalid news 2 --
-$pub_s$
-$city_s$
-nx
-$city_e$
 
-$date_s$
-2024-03-17
-$date_e$
-
-$news_s$
-the bOdy OF ThE invalid news 2 - wrong city
-$news_e$
-$pub_e$
 
 ************************************************
 -- valid ad  --
@@ -64,21 +51,12 @@ $date_s$
 $date_e$
 
 $pr_ad_s$
-the bOdy OF ThE valid private ad 1
+Are you looking for a reliable car mechanic in your area? 
+Look no further! 
+With over 10 years of experience, our certified mechanics provide top-notch services at affordable prices. 
+Whether it's routine maintenance or major repairs, we've got you covered. Contact us today to schedule an appointment and get your car back on the road in no time!
 $pr_ad_e$
 
-$pub_e$
-
--- invalid ad  --
-$pub_s$
-
-$date_s$
-2022-05-01
-$date_e$
-
-$pr_ad_s$
-the bOdy OF ThE invalid private ad  - date in past
-$pr_ad_e$
 $pub_e$
 
 ********************************************
@@ -99,51 +77,10 @@ $sp_type_e$
 
 $sp_news_s$
 Conor McGregor is the most drug-tested fighter under the UFC's new anti-doping regime as the Irishman continues to tease his return to fighting.
-
 McGregor has been drug tested five times, external since January 1. No other fighter has been tested more than twice.
-
 The former UFC champion has spoken at length this week about his desire to return this summer having not fought since 2021.
-
 But the UFC are yet to officially announce his return.
 $sp_news_e$
 
 $pub_e$
 
-
--- invalid sport news --
-$pub_s$
-
-$city_s$
-las vegas  
-$city_e$
-
-$date_s$
-today
-$date_e$
-
-$sp_type_s$
-IH
-$sp_type_e$
-
-$sp_news_s$
-the
-$sp_news_e$
-$pub_e$
-
-*****************************************
--- ivolid publication type --
-$pub_s$
-
-$city_s$
-las vegas  
-$city_e$
-
-$date_s$
-$date_e$
-
-$hz_s$
-smthtjh
-$nz_e$
-
-
-$pub_e$

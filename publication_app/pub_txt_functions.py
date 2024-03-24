@@ -7,22 +7,6 @@ from pub_classes import News, PrivateAd, SportNews
 
 
 
-txt = """
-$pub_s$
-$city_s$
-new yourk
-$city_e$
-
-$date_s$
-2024-03-30
-$date_e$
-
-$news_s$
-the bOdy OF ThE valid news 2
-$news_e$
-
-$pub_e$
-"""
 
 def find_match( pattern, text):
     # Regular expression pattern
@@ -54,13 +38,13 @@ def text_parser(text: str) -> Dict[str, Any]:
         elif date and ad_body:
             result = PrivateAddData(pub_body=ad_body, exp_date=date)
         else:
-            unparsed_data.append(f"Unparsed publication \n{pub}")
+            unparsed_data.append(f"Unparsed TXT publication \n{pub}")
         
         if result:
             if result.status:
                 parsed_data.append(result)
             else:
-                unparsed_data.append(f"Bad {str(result.pub_type.capitalize())} data\n{result.decision} \n{pub}")
+                unparsed_data.append(f"Bad {str(result.pub_type.capitalize())} TXT data\n{result.decision} \n{pub}")
 
 
     return {"parsed_data": parsed_data, "unparsed_data": unparsed_data}
@@ -103,28 +87,30 @@ def txt_parser(fider_path):
 
 
 
-def write_involid_publications(unparsed_text, file_name = 'file_unparsed_pubs.txt' ):
-    text = f"{'-'*70} \n{unparsed_text}\n"
+def write_involid_publications(unparsed_data_lst, file_name = 'file_unparsed_pubs.txt' ):
+
     try:
         with open(file_name, 'a', encoding="utf-8") as file:
-            file.write(text)
+            date_time = datetime.now().strftime('%Y-%m-%d  %H:%M')
+            header = f"\n {'*' * 25} {date_time} {'*' * 25}\n"
+            file.write(header)
+
+            for rec in unparsed_data_lst:
+                text = f"{'-'*70} \n{rec}\n"
+                file.write(text)
+
     except Exception as e:
         raise OSError(f"An unexpected error occurred: {e}")
         
 
 
-def publish_all(folder = '', directory = ''):
+def publish_txt(folder = '', directory = ''):
     path = fider_path(folder, directory)
 
     text = txt_parser(path)
 
     unparsed_data = text_parser(text)["unparsed_data"]
-    date_time = datetime.now().strftime('%Y-%m-%d  %H:%M')
-    unparsed_header = f" {'*' * 25} {date_time} {'*' * 25}"
-    write_involid_publications(unparsed_header)
-    for rec in unparsed_data:
-        write_involid_publications(rec)
-
+    write_involid_publications(unparsed_data)
 
     parsed_data = text_parser(text)["parsed_data"]
 
@@ -144,3 +130,5 @@ def publish_all(folder = '', directory = ''):
         a.publish_data(rec)
 
 
+if __name__ == '__main__':
+    publish_txt()

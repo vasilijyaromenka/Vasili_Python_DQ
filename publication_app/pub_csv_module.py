@@ -1,13 +1,6 @@
 import regex
 import csv
 
-text = """
-homEwork:
- tHis is your homeWork, copy these Text to variable.
-You NEED TO normalize it fROM letter CASEs point oF View. also, create one MORE senTENCE witH LAST WoRDS of each existING SENtence and add it to the END OF this Paragraph.
-it iS misspeLLing here. fix“iS” with correct “is”, but ONLY when it Iz a mistAKE.
-last is TO calculate nuMber OF Whitespace characteRS in this Tex. caREFULL, not only Spaces, but ALL whitespaces. I got 87.
-"""
 
 
 def read_txt_file(file):
