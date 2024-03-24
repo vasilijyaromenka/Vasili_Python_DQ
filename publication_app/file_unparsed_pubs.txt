@@ -1,5 +1,5 @@
 
- ************************* 2024-03-24  21:49 *************************
+ ************************* 2024-03-24  23:22 *************************
 ---------------------------------------------------------------------- 
 Bad News TXT data
 / To short pub_body // To short pub_city / 
@@ -52,7 +52,7 @@ $sp_news_e$
 
 
 ---------------------------------------------------------------------- 
-Unparsed publication 
+Unparsed TXT publication 
 
 
 $city_s$
@@ -69,7 +69,7 @@ $nz_e$
 
 
 
- ************************* 2024-03-24  21:49 *************************
+ ************************* 2024-03-24  23:22 *************************
 ---------------------------------------------------------------------- 
 Bad News JSON data
 /Invalid pub_date format // To short pub_body // To short pub_city / 
@@ -105,3 +105,59 @@ Wrong JSON publication type
     "pub_date": "2024-04-04",
     "pub_type": "Unkonwn"
 }
+
+ ************************* 2024-03-24  23:22 *************************
+---------------------------------------------------------------------- 
+Bad News XML data
+/Invalid pub_date format // To short pub_body /
+<?xml version="1.0" ?>
+<pub pub_type="news">
+	
+		
+	<pub_body>XML</pub_body>
+	
+		
+	<pub_date>666</pub_date>
+	
+		
+	<pub_city>city</pub_city>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Ad XML data
+/ exp_date in the past /
+<?xml version="1.0" ?>
+<pub pub_type="ad">
+	
+		
+	<exp_date>2022-04-04</exp_date>
+	
+		
+	<pub_body>XML PRIVATE AD: date in past</pub_body>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Sport_news XML data
+/ To short pub_city // To short sport_type /
+<?xml version="1.0" ?>
+<pub pub_type="sport_news">
+	
+		
+	<pub_body>XML SPORT NEWS: no sport type and city</pub_body>
+	
+		
+	<pub_date>2024-04-04</pub_date>
+	
+		
+	<pub_city>no</pub_city>
+	
+		
+	<sport_type>no</sport_type>
+	
+	
+</pub>
+

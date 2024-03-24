@@ -1,0 +1,17 @@
+<pubs>
+	<pub pub_type="news">
+		<pub_body >XML</pub_body>
+		<pub_date >666</pub_date>
+		<pub_city >city</pub_city>
+	</pub>
+	<pub pub_type="ad">
+		<exp_date >2022-04-04</exp_date>
+		<pub_body >XML PRIVATE AD: date in past</pub_body>
+	</pub>
+	<pub pub_type="sport_news">
+		<pub_body >XML SPORT NEWS: no sport type and city</pub_body>
+		<pub_date >2024-04-04</pub_date>
+		<pub_city >no</pub_city>
+		<sport_type >no</sport_type>
+	</pub>
+</pubs>

@@ -1,6 +1,7 @@
 from pub_classes import News, PrivateAd, SportNews
 from pub_txt_functions import publish_txt
 from pub_json_functions import publish_json
+from pub_xml_functions import publish_xml
 from pub_csv_module import letters_counts, words_counts
 
 
@@ -37,6 +38,7 @@ while True:
     elif pub_type == '4':
         publish_txt()
         publish_json()
+        publish_xml()
         is_valid_input = True
         print("The feeder folder has been proccessed\n")
     else:   
