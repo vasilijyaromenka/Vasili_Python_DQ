@@ -4,6 +4,9 @@ from abc import abstractmethod
 from pub_data_classes import NewsData, PrivateAddData, SportNewsData
 from pub_normalize import normalize_case
 import re
+from pub_data_base import insert_news, insert_private_ad, insert_sport_news
+
+
 
 class Publcation:
     def __init__(self):
@@ -12,9 +15,6 @@ class Publcation:
         self.file_path = r"feed.txt"
         self.pub = None
 
-    
-    # def user_input(self, text_comment = ""):
-    #     return input(text_comment)
 
     def set_pub_body(self):
         is_valid_input = False
@@ -62,12 +62,23 @@ class Publcation:
         except Exception as e:
             print(f"An unexpected error occurred: {e}") 
 
+    def insert_publication(self):
+        if self.pub.pub_type == 'news':
+            insert_news(date=self.pub.pub_date, city=self.pub.pub_city, news=self.pub.pub_body)
+        elif self.pub.pub_type == 'ad':
+            insert_private_ad(date=self.pub.pub_date, exp_date=self.pub.exp_date, ad=self.pub.pub_body)
+        elif self.pub.pub_type == 'sport_news':
+            insert_sport_news(date=self.pub.pub_date, city=self.pub.pub_city, sp_type=self.pub.sport_type, news=self.pub.pub_body)
 
+    
+    
     def publish_data(self, data_instance):
         self.pub = data_instance
         post = self.pub_generator()
         self.write_to_file(post)
+        self.insert_publication()
         return post
+        
 
     @abstractmethod
     def publish_from_input(self):
@@ -114,13 +125,20 @@ class News(Publcation):
         pub_end = f"{pub_city}, {pub_date}."
         return pub_end
     
+    # def publish_data(self, data_instance):
+    #     self.pub = data_instance
+    #     post = self.pub_generator()
+    #     self.write_to_file(post)
+    #     insert_news(news_date=pub., news_body=, news_city=)
+    #     return post
+    
     def publish_from_input(self):
         in_city = self.set_city()
         in_date = self.set_news_date()
         in_body = self.set_pub_body()
         news = NewsData(pub_city=in_city, pub_date=in_date, pub_body=in_body)
-        
-        post = self.publish_data(news)    
+        post = self.publish_data(news)
+
         print(f"Your post has been published: \n{post}")    
         print(self.length * '-') 
 

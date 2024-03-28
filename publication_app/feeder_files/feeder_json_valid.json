@@ -1,0 +1,23 @@
+{
+    "pubs": [
+      {
+        "pub_type": "news",
+        "pub_body": "news: the body of valid json news",
+        "pub_date": null,
+        "pub_city": "json city"
+      },
+      {
+        "pub_type": "ad",
+        "exp_date": "2024-04-04",
+        "pub_body": "PRIVATE AD: THE BODY OF VALID json AD",
+        "pub_date": null
+      },
+      {
+        "pub_type": "sport_news",
+        "pub_body": "SPORT NEWS: THE BODY OF a VALID json SPORT NEWS",
+        "pub_date": "2024-04-04",
+        "pub_city": "json city",
+        "sport_type": "golf"
+      }
+    ]
+}

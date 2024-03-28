@@ -161,3 +161,540 @@ Bad Sport_news XML data
 	
 </pub>
 
+
+ ************************* 2024-03-27  19:09 *************************
+---------------------------------------------------------------------- 
+Bad News TXT data
+/ To short pub_body // To short pub_city / 
+
+$city_s$
+nx
+$city_e$
+
+$date_s$
+2024-03-17
+$date_e$
+
+$news_s$
+inval
+$news_e$
+
+---------------------------------------------------------------------- 
+Bad Ad TXT data
+/ exp_date in the past / 
+
+
+$date_s$
+2022-05-01
+$date_e$
+
+$pr_ad_s$
+the bOdy OF ThE invalid private ad  - date in past
+$pr_ad_e$
+
+---------------------------------------------------------------------- 
+Bad Sport_news TXT data
+/Invalid pub_date format // To short pub_body // To short sport_type / 
+
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+202409
+$date_e$
+
+$sp_type_s$
+IH
+$sp_type_e$
+
+$sp_news_s$
+short
+$sp_news_e$
+
+
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$hz_s$
+smthtjh
+$nz_e$
+
+
+
+
+ ************************* 2024-03-28  13:07 *************************
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+ No txt-files found 
+
+ ************************* 2024-03-28  13:07 *************************
+---------------------------------------------------------------------- 
+Bad News JSON data
+/Invalid pub_date format // To short pub_body // To short pub_city / 
+{
+    "pub_body": "No",
+    "pub_city": "NY",
+    "pub_date": "20240101",
+    "pub_type": "news"
+}
+---------------------------------------------------------------------- 
+Bad Ad JSON data
+/ exp_date in the past / 
+{
+    "exp_date": "2023-04-04",
+    "pub_body": "PRIVATE AD: with exp date in the past",
+    "pub_date": null,
+    "pub_type": "ad"
+}
+---------------------------------------------------------------------- 
+Bad Sport_news JSON data
+/ To short pub_body // To short pub_city // To short sport_type / 
+{
+    "pub_body": "SPORT",
+    "pub_date": null,
+    "pub_type": "sport_news",
+    "sport_type": null
+}
+---------------------------------------------------------------------- 
+Wrong JSON publication type 
+{
+    "news_type": "fake",
+    "pub_body": "Unkonwn publication type",
+    "pub_date": "2024-04-04",
+    "pub_type": "Unkonwn"
+}
+---------------------------------------------------------------------- 
+An unexpected error while reading json files: wrapper() got an unexpected keyword argument 'date'
+
+ ************************* 2024-03-28  13:07 *************************
+---------------------------------------------------------------------- 
+Bad News XML data
+/Invalid pub_date format // To short pub_body /
+<?xml version="1.0" ?>
+<pub pub_type="news">
+	
+		
+	<pub_body>XML</pub_body>
+	
+		
+	<pub_date>666</pub_date>
+	
+		
+	<pub_city>city</pub_city>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Ad XML data
+/ exp_date in the past /
+<?xml version="1.0" ?>
+<pub pub_type="ad">
+	
+		
+	<exp_date>2022-04-04</exp_date>
+	
+		
+	<pub_body>XML PRIVATE AD: date in past</pub_body>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Sport_news XML data
+/ To short pub_city // To short sport_type /
+<?xml version="1.0" ?>
+<pub pub_type="sport_news">
+	
+		
+	<pub_body>XML SPORT NEWS: no sport type and city</pub_body>
+	
+		
+	<pub_date>2024-04-04</pub_date>
+	
+		
+	<pub_city>no</pub_city>
+	
+		
+	<sport_type>no</sport_type>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+An unexpected error while reading XML files: wrapper() got an unexpected keyword argument 'date'
+
+ ************************* 2024-03-28  13:20 *************************
+---------------------------------------------------------------------- 
+Bad News TXT data
+/ To short pub_body // To short pub_city / 
+
+$city_s$
+nx
+$city_e$
+
+$date_s$
+2024-03-17
+$date_e$
+
+$news_s$
+inval
+$news_e$
+
+---------------------------------------------------------------------- 
+Bad Ad TXT data
+/ exp_date in the past / 
+
+
+$date_s$
+2022-05-01
+$date_e$
+
+$pr_ad_s$
+the bOdy OF ThE invalid private ad  - date in past
+$pr_ad_e$
+
+---------------------------------------------------------------------- 
+Bad Sport_news TXT data
+/Invalid pub_date format // To short pub_body // To short sport_type / 
+
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+202409
+$date_e$
+
+$sp_type_s$
+IH
+$sp_type_e$
+
+$sp_news_s$
+short
+$sp_news_e$
+
+
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$hz_s$
+smthtjh
+$nz_e$
+
+
+
+
+ ************************* 2024-03-28  13:20 *************************
+---------------------------------------------------------------------- 
+Bad News JSON data
+/Invalid pub_date format // To short pub_body // To short pub_city / 
+{
+    "pub_body": "No",
+    "pub_city": "NY",
+    "pub_date": "20240101",
+    "pub_type": "news"
+}
+---------------------------------------------------------------------- 
+Bad Ad JSON data
+/ exp_date in the past / 
+{
+    "exp_date": "2023-04-04",
+    "pub_body": "PRIVATE AD: with exp date in the past",
+    "pub_date": null,
+    "pub_type": "ad"
+}
+---------------------------------------------------------------------- 
+Bad Sport_news JSON data
+/ To short pub_body // To short pub_city // To short sport_type / 
+{
+    "pub_body": "SPORT",
+    "pub_date": null,
+    "pub_type": "sport_news",
+    "sport_type": null
+}
+---------------------------------------------------------------------- 
+Wrong JSON publication type 
+{
+    "news_type": "fake",
+    "pub_body": "Unkonwn publication type",
+    "pub_date": "2024-04-04",
+    "pub_type": "Unkonwn"
+}
+
+ ************************* 2024-03-28  13:20 *************************
+---------------------------------------------------------------------- 
+Bad News XML data
+/Invalid pub_date format // To short pub_body /
+<?xml version="1.0" ?>
+<pub pub_type="news">
+	
+		
+	<pub_body>XML</pub_body>
+	
+		
+	<pub_date>666</pub_date>
+	
+		
+	<pub_city>city</pub_city>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Ad XML data
+/ exp_date in the past /
+<?xml version="1.0" ?>
+<pub pub_type="ad">
+	
+		
+	<exp_date>2022-04-04</exp_date>
+	
+		
+	<pub_body>XML PRIVATE AD: date in past</pub_body>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Sport_news XML data
+/ To short pub_city // To short sport_type /
+<?xml version="1.0" ?>
+<pub pub_type="sport_news">
+	
+		
+	<pub_body>XML SPORT NEWS: no sport type and city</pub_body>
+	
+		
+	<pub_date>2024-04-04</pub_date>
+	
+		
+	<pub_city>no</pub_city>
+	
+		
+	<sport_type>no</sport_type>
+	
+	
+</pub>
+
+
+ ************************* 2024-03-28  13:25 *************************
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+ No txt-files found 
+
+ ************************* 2024-03-28  13:25 *************************
+---------------------------------------------------------------------- 
+No JSON files found in the folder
+
+ ************************* 2024-03-28  13:25 *************************
+---------------------------------------------------------------------- 
+No XML files found in the folder
+
+ ************************* 2024-03-28  13:26 *************************
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+ No txt-files found 
+
+ ************************* 2024-03-28  13:26 *************************
+---------------------------------------------------------------------- 
+No JSON files found in the folder
+
+ ************************* 2024-03-28  13:26 *************************
+---------------------------------------------------------------------- 
+No XML files found in the folder
+
+ ************************* 2024-03-28  13:27 *************************
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+ No txt-files found 
+
+ ************************* 2024-03-28  13:27 *************************
+---------------------------------------------------------------------- 
+No JSON files found in the folder
+
+ ************************* 2024-03-28  13:27 *************************
+---------------------------------------------------------------------- 
+No XML files found in the folder
+
+ ************************* 2024-03-28  13:28 *************************
+---------------------------------------------------------------------- 
+Bad News TXT data
+/ To short pub_body // To short pub_city / 
+
+$city_s$
+nx
+$city_e$
+
+$date_s$
+2024-03-17
+$date_e$
+
+$news_s$
+inval
+$news_e$
+
+---------------------------------------------------------------------- 
+Bad Ad TXT data
+/ exp_date in the past / 
+
+
+$date_s$
+2022-05-01
+$date_e$
+
+$pr_ad_s$
+the bOdy OF ThE invalid private ad  - date in past
+$pr_ad_e$
+
+---------------------------------------------------------------------- 
+Bad Sport_news TXT data
+/Invalid pub_date format // To short pub_body // To short sport_type / 
+
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+202409
+$date_e$
+
+$sp_type_s$
+IH
+$sp_type_e$
+
+$sp_news_s$
+short
+$sp_news_e$
+
+
+---------------------------------------------------------------------- 
+Unparsed TXT publication 
+
+
+$city_s$
+las vegas  
+$city_e$
+
+$date_s$
+$date_e$
+
+$hz_s$
+smthtjh
+$nz_e$
+
+
+
+
+ ************************* 2024-03-28  13:28 *************************
+---------------------------------------------------------------------- 
+Bad News JSON data
+/Invalid pub_date format // To short pub_body // To short pub_city / 
+{
+    "pub_body": "No",
+    "pub_city": "NY",
+    "pub_date": "20240101",
+    "pub_type": "news"
+}
+---------------------------------------------------------------------- 
+Bad Ad JSON data
+/ exp_date in the past / 
+{
+    "exp_date": "2023-04-04",
+    "pub_body": "PRIVATE AD: with exp date in the past",
+    "pub_date": null,
+    "pub_type": "ad"
+}
+---------------------------------------------------------------------- 
+Bad Sport_news JSON data
+/ To short pub_body // To short pub_city // To short sport_type / 
+{
+    "pub_body": "SPORT",
+    "pub_date": null,
+    "pub_type": "sport_news",
+    "sport_type": null
+}
+---------------------------------------------------------------------- 
+Wrong JSON publication type 
+{
+    "news_type": "fake",
+    "pub_body": "Unkonwn publication type",
+    "pub_date": "2024-04-04",
+    "pub_type": "Unkonwn"
+}
+
+ ************************* 2024-03-28  13:28 *************************
+---------------------------------------------------------------------- 
+Bad News XML data
+/Invalid pub_date format // To short pub_body /
+<?xml version="1.0" ?>
+<pub pub_type="news">
+	
+		
+	<pub_body>XML</pub_body>
+	
+		
+	<pub_date>666</pub_date>
+	
+		
+	<pub_city>city</pub_city>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Ad XML data
+/ exp_date in the past /
+<?xml version="1.0" ?>
+<pub pub_type="ad">
+	
+		
+	<exp_date>2022-04-04</exp_date>
+	
+		
+	<pub_body>XML PRIVATE AD: date in past</pub_body>
+	
+	
+</pub>
+
+---------------------------------------------------------------------- 
+Bad Sport_news XML data
+/ To short pub_city // To short sport_type /
+<?xml version="1.0" ?>
+<pub pub_type="sport_news">
+	
+		
+	<pub_body>XML SPORT NEWS: no sport type and city</pub_body>
+	
+		
+	<pub_date>2024-04-04</pub_date>
+	
+		
+	<pub_city>no</pub_city>
+	
+		
+	<sport_type>no</sport_type>
+	
+	
+</pub>
+
