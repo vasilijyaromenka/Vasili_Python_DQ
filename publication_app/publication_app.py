@@ -17,8 +17,10 @@ input_comment = """Choose your publication type
 1 - News, 
 2 - Private Ad, 
 3 - Sport News
-4 - Pulic all from folder
-Enter 1-4: 
+4 - Pulish from txt files
+5 - Pulish from json files
+6 - Pulish from xml files
+Enter 1-6: 
 """
 
 while True:
@@ -37,10 +39,16 @@ while True:
         is_valid_input = True
     elif pub_type == '4':
         publish_txt()
+        is_valid_input = True
+        print("txt files have been proccessed\n")
+    elif pub_type == '5':
         publish_json()
+        is_valid_input = True
+        print("json files have been proccessed\n")
+    elif pub_type == '6':
         publish_xml()
         is_valid_input = True
-        print("The feeder folder has been proccessed\n")
+        print("xml files have been proccessed\n")
     else:   
         print("Enter a valid input")
 

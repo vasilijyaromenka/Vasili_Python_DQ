@@ -50,13 +50,16 @@ def letters_counts(file):
             'letter' : key,
             'cout_all' : letters_lower.count(key),
             'count_upper' : letters.count(key.upper()),
-            'percent_upper' : str(round(letters.count(key.upper()) * 100 / letters_lower.count(key) , 1)) + '%'
+            'percentage' : round(letters_lower.count(key) * 100 / len(letters), 4)
         }
 
 
     with open('file_letters_counts.csv', 'w', newline='', encoding="utf-8") as file:
-        header = ['letter', 'cout_all', 'count_upper', 'percent_upper']
+        header = ['letter', 'cout_all', 'count_upper', 'percentage']
         writer = csv.DictWriter(file, fieldnames=header, delimiter=',', quotechar="'", quoting= csv.QUOTE_MINIMAL)
         writer.writeheader()
         writer.writerows(dct.values())
 
+if __name__ == '__main__':
+    letters_counts('feed')
+    words_counts('feed')

@@ -21,7 +21,7 @@ designed as a piece of interactive art, intended to provide a safe
 place for women to enjoy each other's company, while also highlighting
 the exclusion they faced for decades.
 
-Sydney, 2024-03-24 23:22.
+Sydney, 2024-04-04 10:26.
 ----------------------------------------------------------------------
                                  News
 ----------------------------------------------------------------------
@@ -51,7 +51,7 @@ maintenance or major repairs, we've got you covered. contact us today
 to schedule an appointment and get your car back on the road in no
 time!
 
-Actual until: 2024-05-01, 38 days left.
+Actual until: 2024-05-01, 27 days left.
 ----------------------------------------------------------------------
                               Sport News
 ----------------------------------------------------------------------
@@ -65,7 +65,7 @@ former ufc champion has spoken at length this week about his desire to
 return this summer having not fought since 2021. but the ufc are yet
 to officially announce his return.
 
-Ufc news, Las Vegas, 2024-03-24 23:22.
+Ufc news, Las Vegas, 2024-04-04 10:26.
 ----------------------------------------------------------------------
                                  News
 ----------------------------------------------------------------------
@@ -73,7 +73,7 @@ Ufc news, Las Vegas, 2024-03-24 23:22.
   
 News: the body of valid json news
 
-Json City, 2024-03-24 23:22.
+Json City, 2024-04-04 10:28.
 ----------------------------------------------------------------------
                               Private Ad
 ----------------------------------------------------------------------
@@ -81,7 +81,7 @@ Json City, 2024-03-24 23:22.
   
 Private ad: the body of valid json ad
 
-Actual until: 2024-04-04, 11 days left.
+Actual until: 2024-04-04, 0 days left.
 ----------------------------------------------------------------------
                               Sport News
 ----------------------------------------------------------------------
@@ -97,7 +97,7 @@ Golf news, Json City, 2024-04-04.
   
 Xml news: тело валидных новостей
 
-Xml Город, 2024-03-24 23:22.
+Xml Город, 2024-04-04 10:28.
 ----------------------------------------------------------------------
                               Private Ad
 ----------------------------------------------------------------------
@@ -105,7 +105,7 @@ Xml Город, 2024-03-24 23:22.
   
 Xml private ad: тело валидной рекламы
 
-Actual until: 2024-04-04, 11 days left.
+Actual until: 2024-04-04, 0 days left.
 ----------------------------------------------------------------------
                               Sport News
 ----------------------------------------------------------------------
@@ -119,89 +119,33 @@ Xml Golf news, Xml City, 2024-04-04.
 ----------------------------------------------------------------------
 
   
-For record
+Manual news body
 
-346, 2024-03-27 18:26.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Record
-
-New, 2024-03-27 18:31.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-123456
-
-333, 2024-03-27 18:36.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-222222
-
-111, 2024-03-27 18:56.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-222222
-
-111, 2024-03-27 18:57.
+Manual News, 2024-04-04 10:29.
 ----------------------------------------------------------------------
                               Private Ad
 ----------------------------------------------------------------------
 
   
-333333
+Manual ad
 
-Actual until: 2029-02-02, 1773 days left.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-333333
-
-Actual until: 2029-02-02, 1773 days left.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-333333
-
-Actual until: 2029-09-09, 1992 days left.
+Actual until: 2024-09-09, 158 days left.
 ----------------------------------------------------------------------
                               Sport News
 ----------------------------------------------------------------------
 
   
-5555555
+Manual sport news body
 
-555555 news, 5555, 2030-01-01.
+Ufc news, Manual City, 2025-09-09.
 ----------------------------------------------------------------------
                                  News
 ----------------------------------------------------------------------
 
   
-News news
+Some text
 
-News, 2024-03-27 19:04.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Private add --
-
-Actual until: 2030-09-01, 2349 days left.
+Mogilev, 2024-04-04 10:32.
 ----------------------------------------------------------------------
                               Sport News
 ----------------------------------------------------------------------
@@ -209,321 +153,4 @@ Actual until: 2030-09-01, 2349 days left.
   
 Sport news
 
-Sport news, Sport, 2024-03-27 19:05.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Sport news
-
-Sport news, Sport, 2024-03-27 19:06.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Inside tasmania's famous museum of old and new art lies a large,
-emerald-draped cube. the walls are thick silk curtains. within them, a
-cascading chandelier hangs over a phallus-shaped velvet couch and a
-chequered marble floor. opulent gold accents everything - from the
-framed art on the walls to the furniture. women are ushered in and
-offered champagne by male butlers "who live to serve" them. but men
-are otherwise noticeably absent, turned away at the entrance. this
-"ladies lounge" takes the concept of an old australian pub and turns
-it on its head. it was only in 1965 that women won the right to drink
-in the nation's bars. previously, they were relegated to dingy side
-rooms, if admitted at all, and often charged exorbitant prices for
-their tipple. and so, the exhibit - which contains some of the
-museum's most-acclaimed works, from picasso to sidney nolan - was
-designed as a piece of interactive art, intended to provide a safe
-place for women to enjoy each other's company, while also highlighting
-the exclusion they faced for decades.
-
-Sydney, 2024-03-27 19:09.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-News: the body of valid json news
-
-Json City, 2024-03-28 13:07.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Xml news: тело валидных новостей
-
-Xml Город, 2024-03-28 13:07.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-111111
-
-111, 2024-03-28 13:11.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-111111
-
-111, 2024-03-28 13:17.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-He's done it
-
-Misnk'S Good, 2024-03-28 13:18.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-It's for sale
-
-Actual until: 2029-08-03, 1954 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Asdad' asdasd'
-
-Jjj' news, Adasd', 2024-03-28 13:18.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Inside tasmania's famous museum of old and new art lies a large,
-emerald-draped cube. the walls are thick silk curtains. within them, a
-cascading chandelier hangs over a phallus-shaped velvet couch and a
-chequered marble floor. opulent gold accents everything - from the
-framed art on the walls to the furniture. women are ushered in and
-offered champagne by male butlers "who live to serve" them. but men
-are otherwise noticeably absent, turned away at the entrance. this
-"ladies lounge" takes the concept of an old australian pub and turns
-it on its head. it was only in 1965 that women won the right to drink
-in the nation's bars. previously, they were relegated to dingy side
-rooms, if admitted at all, and often charged exorbitant prices for
-their tipple. and so, the exhibit - which contains some of the
-museum's most-acclaimed works, from picasso to sidney nolan - was
-designed as a piece of interactive art, intended to provide a safe
-place for women to enjoy each other's company, while also highlighting
-the exclusion they faced for decades.
-
-Sydney, 2024-03-28 13:20.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Власти германии легализовали употребление, хранение и выращивание
-каннабиса: закон об этом, одобренный властями страны, вступает в силу
-1 апреля. однако берлин не пошел по пути канады, где марихуана открыто
-продается в магазинах, и разрешил ее распространение только через
-частные клубы. закон о легализации марихуаны ранее уже был одобрен
-бундестагом, а теперь прошел и через верхнюю палату немецкого
-парламента бундесрат, в которую входят представители правительств 16
-федеральных земель германии. некоторые депутаты бундесрата пытались
-заблокировать легализацию, однако соответствующая резолюция не набрала
-достаточного числа голосов, и это означает, что закон вступит в силу.
-
-New Yourk, 2024-03-17.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Are you looking for a reliable car mechanic in your area?  look no
-further!  with over 10 years of experience, our certified mechanics
-provide top-notch services at affordable prices.  whether it's routine
-maintenance or major repairs, we've got you covered. contact us today
-to schedule an appointment and get your car back on the road in no
-time!
-
-Actual until: 2024-05-01, 34 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Conor mcgregor is the most drug-tested fighter under the ufc's new
-anti-doping regime as the irishman continues to tease his return to
-fighting. mcgregor has been drug tested five times, external since
-january 1. no other fighter has been tested more than twice. the
-former ufc champion has spoken at length this week about his desire to
-return this summer having not fought since 2021. but the ufc are yet
-to officially announce his return.
-
-Ufc news, Las Vegas, 2024-03-28 13:20.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-News: the body of valid json news
-
-Json City, 2024-03-28 13:20.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Private ad: the body of valid json ad
-
-Actual until: 2024-04-04, 7 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Sport news: the body of a valid json sport news
-
-Golf news, Json City, 2024-04-04.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Xml news: тело валидных новостей
-
-Xml Город, 2024-03-28 13:20.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Xml private ad: тело валидной рекламы
-
-Actual until: 2024-04-04, 7 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Xml sport news: валидные новости спорта
-
-Xml Golf news, Xml City, 2024-04-04.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Inside tasmania's famous museum of old and new art lies a large,
-emerald-draped cube. the walls are thick silk curtains. within them, a
-cascading chandelier hangs over a phallus-shaped velvet couch and a
-chequered marble floor. opulent gold accents everything - from the
-framed art on the walls to the furniture. women are ushered in and
-offered champagne by male butlers "who live to serve" them. but men
-are otherwise noticeably absent, turned away at the entrance. this
-"ladies lounge" takes the concept of an old australian pub and turns
-it on its head. it was only in 1965 that women won the right to drink
-in the nation's bars. previously, they were relegated to dingy side
-rooms, if admitted at all, and often charged exorbitant prices for
-their tipple. and so, the exhibit - which contains some of the
-museum's most-acclaimed works, from picasso to sidney nolan - was
-designed as a piece of interactive art, intended to provide a safe
-place for women to enjoy each other's company, while also highlighting
-the exclusion they faced for decades.
-
-Sydney, 2024-03-28 13:28.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Власти германии легализовали употребление, хранение и выращивание
-каннабиса: закон об этом, одобренный властями страны, вступает в силу
-1 апреля. однако берлин не пошел по пути канады, где марихуана открыто
-продается в магазинах, и разрешил ее распространение только через
-частные клубы. закон о легализации марихуаны ранее уже был одобрен
-бундестагом, а теперь прошел и через верхнюю палату немецкого
-парламента бундесрат, в которую входят представители правительств 16
-федеральных земель германии. некоторые депутаты бундесрата пытались
-заблокировать легализацию, однако соответствующая резолюция не набрала
-достаточного числа голосов, и это означает, что закон вступит в силу.
-
-New Yourk, 2024-03-17.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Are you looking for a reliable car mechanic in your area?  look no
-further!  with over 10 years of experience, our certified mechanics
-provide top-notch services at affordable prices.  whether it's routine
-maintenance or major repairs, we've got you covered. contact us today
-to schedule an appointment and get your car back on the road in no
-time!
-
-Actual until: 2024-05-01, 34 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Conor mcgregor is the most drug-tested fighter under the ufc's new
-anti-doping regime as the irishman continues to tease his return to
-fighting. mcgregor has been drug tested five times, external since
-january 1. no other fighter has been tested more than twice. the
-former ufc champion has spoken at length this week about his desire to
-return this summer having not fought since 2021. but the ufc are yet
-to officially announce his return.
-
-Ufc news, Las Vegas, 2024-03-28 13:28.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-News: the body of valid json news
-
-Json City, 2024-03-28 13:28.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Private ad: the body of valid json ad
-
-Actual until: 2024-04-04, 7 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Sport news: the body of a valid json sport news
-
-Golf news, Json City, 2024-04-04.
-----------------------------------------------------------------------
-                                 News
-----------------------------------------------------------------------
-
-  
-Xml news: тело валидных новостей
-
-Xml Город, 2024-03-28 13:28.
-----------------------------------------------------------------------
-                              Private Ad
-----------------------------------------------------------------------
-
-  
-Xml private ad: тело валидной рекламы
-
-Actual until: 2024-04-04, 7 days left.
-----------------------------------------------------------------------
-                              Sport News
-----------------------------------------------------------------------
-
-  
-Xml sport news: валидные новости спорта
-
-Xml Golf news, Xml City, 2024-04-04.
+Ihk news, Gomel, 2024-04-04 10:34.
