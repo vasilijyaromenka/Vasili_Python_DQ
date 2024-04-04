@@ -19,7 +19,8 @@ def read_txt_file(file):
 def words_counts(file):
 
     text = read_txt_file(file)
-    words = regex.findall(r'\b\p{L}+\b', text.lower())
+    #words = regex.findall(r'\b\p{L}+\b', text.lower())
+    words = regex.findall(r'\b\p{L}+-*\p{L}*\b', text.lower())
     
     dct = dict.fromkeys(words, 0)
     
@@ -29,7 +30,7 @@ def words_counts(file):
     rows = [[k,v] for k,v in dct.items()]
     
     with open('file_words_counts.csv', 'w', encoding="utf-8", newline='') as file:
-        writer = csv.writer(file, delimiter='-', quotechar="'", quoting= csv.QUOTE_MINIMAL)
+        writer = csv.writer(file, delimiter='=', quotechar="'", quoting= csv.QUOTE_MINIMAL)
         writer.writerows(rows)
         # for key, val in dct.items():
         #     writer.writerow([key, val])
@@ -42,6 +43,7 @@ def letters_counts(file):
 
     letters = [l for l in text if l.upper() != l.lower()]
     letters_lower = [l for l in text.lower() if l.upper() != l.lower()]
+    letters_lower.sort()
 
     dct = dict.fromkeys(letters_lower, {})
 
@@ -50,7 +52,7 @@ def letters_counts(file):
             'letter' : key,
             'cout_all' : letters_lower.count(key),
             'count_upper' : letters.count(key.upper()),
-            'percentage' : round(letters_lower.count(key) * 100 / len(letters), 4)
+            'percentage' : round(letters_lower.count(key) * 100 / len(letters), 2)
         }
 
 
